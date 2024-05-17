@@ -1,0 +1,28 @@
+Armitage is a scriptable red team collaboration tool for Metasploit that visualizes targets, recommends exploits, and exposes the advanced post-exploitation features in the framework
+
+In case it isnt preinstalled, run the following commands on your terminal -
+
+- apt-get update
+- apt-get install armitage
+
+The tool is mostly self-explanatory due to its GUI.
+simulating an attack on a Windows XP system using Armitage on Kali Linux.
+
+Launch Armitage by typing:
+- service postgresql start armitage
+
+First, we need to ‘discover’ this host.
+- Hosts -> nmap scan
+OR
+we could manually ‘add host’ by providing its IP.
+
+Now I can see this windows XP host in Armitage workspace. From here, I could manually search for vulnerabilities on the Windows XP and then try to exploit them, but I chose the easy way on Armitage, which is ‘Hail Mary
+- Attacks -> Hail Mary
+
+Hail Mary tried some common exploits relating to available services on victim machine and gave me the ‘red’ around that host, which means the host is compromised
+
+We gain access to cmd.exe ‘command prompt’ in windows.
+
+
+
+
